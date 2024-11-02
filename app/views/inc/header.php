@@ -5,8 +5,9 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo URLROOT.'/asserts/css/'.$style; ?>.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo URLROOT.'/asserts/css/resetcss.css'?>">
+    <link rel="stylesheet" href="<?php echo URLROOT.'/asserts/css/'.$style; ?>.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
     
@@ -15,21 +16,29 @@
     <div class="nav_wrap">
         <div class="grid-container">
             <div class="header">
-                <a href="<?php echo URLROOT; ?>">
+                <a href="<?php echo URLROOT; ?>" class="logo">
                     <img src="<?php echo LOGOSITE;?>" alt="logo">
                 </a>
-                <form class="d-flex" role="search">
+                
+                <ul class="nav_ul">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Chủ đề</a></li>
+                    <li><a href="/">Thể loại</a></li>
+                    <li><a href="/">Tác giả</a></li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
                     <input class="form-control me-3" type="search" placeholder="Bạn tìm kiếm ở đây nha..." aria-label="Tìm kiếm">
                     <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
-                </form>
-                <ul class="nav_ul">
-                    <li><a href="./setting.php">Cài đặt</a></li>
-                    <!-- <li><a href="#bookreview">Bài review</a></li> -->
-                    <!-- <li><a href="#topic">Chủ đề</a></li> -->
-                    <li><a class="active" href="./index.php">Trang chủ</a></li>
-                </ul>
+                </form> -->
+                <!-- <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Type to Search...">
+                </div> -->
+                <!-- <div class="search-form">
+                    <button><i class="fas fa-search"></i></button>
+                </div> -->
                 <ul class="user">
-                    <img id="user_img" class="user_img" src="./asset/logo/Screenshot 2024-10-02 at 09.37.04.png" alt="logo">
+                    <img id="user_img" class="user_img" src="./asserts/logo/Screenshot 2024-10-02 at 09.37.04.png" alt="logo">
                     <ul id="user_content" class="user-content">
                         <li class="user_logout"><a href="./login.php">Đăng nhập</a></li>
                         <li class="your_rv"><a href="./yourrv.php">Bài viết của bạn</a></li>

@@ -8,12 +8,9 @@
   $autoload = [
     'Controller',
     'Core',
-    'Database'
+    'Database',
+    'Model'
   ];
-  // spl_autoload_register(function($className){
-  //   require_once 'libraries/' . $className . '.php';
-  // });
-  
 foreach($autoload as $className){
   require_once 'libraries/' . $className . '.php';
 }

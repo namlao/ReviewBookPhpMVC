@@ -64,16 +64,14 @@
   
   }
   
-  .header .logo{
+  .header a.logo{
     width: 20%;
-    cursor: pointer;
-    
+    /* display: block;     */
+    /* flex-grow: 1; */
   }
-  .header .logo img{
-    width: 70%;
-    float: left;
-    border-radius: 50%;
-  
+  .header a.logo img{
+    width: 50%;
+    display: block;
   }
   
   .nav_ul {
@@ -82,10 +80,15 @@
     list-style-type: none;
     align-items: center;
     overflow: hidden;
+    flex-grow: 2;
+    display: inline-block;
   }
   
   .nav_ul li {
-    float: right;
+    /* float: right; */
+    padding-right: 15px;
+    padding-left: 15px;
+    display: inline-block;
   
   }
   
@@ -101,14 +104,15 @@
     background-color: var(--gray_color);
     color: var(--button_color);
   }
+  
   .header .user{
     width: 7%;
-    position: relative;
+    /* position: relative; */
+    flex-grow: 1;
     
   }
   .header .user .user_img{
-    width: 100%;
-    float: left;
+    width: 35%;
     border-radius: 50%;
   }
   .header .user .user-content{
