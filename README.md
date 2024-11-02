@@ -1,7 +1,8 @@
 
 Test class BaseModel
-        $book = $this->model("test")->getAll()->execute();
 
+
+        $book = $this->model("test")->getAll()->execute();
 
         $test = $this->model("test")->getById(5);
 
