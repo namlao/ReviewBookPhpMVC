@@ -10,7 +10,9 @@
 <!-- content -->
 <div>
     <?php 
-        echo $book; 
+        foreach($book as $item){
+            echo $item['name'].'<br>';
+        }
     
     ?>
 

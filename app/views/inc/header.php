@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo URLROOT.'/asserts/css/resetcss.css'?>">
-    <link rel="stylesheet" href="<?php echo URLROOT.'/asserts/css/'.$style; ?>.css">
+    <link rel="stylesheet" href="<?php echo $this->asset('css/resetcss.css');?>">
+    <link rel="stylesheet" href="<?php echo $this->asset("css/$style.css"); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
     
@@ -38,7 +38,7 @@
                     <button><i class="fas fa-search"></i></button>
                 </div> -->
                 <ul class="user">
-                    <img id="user_img" class="user_img" src="./asserts/logo/Screenshot 2024-10-02 at 09.37.04.png" alt="logo">
+                    <img id="user_img" class="user_img" src="./assets/logo/Screenshot 2024-10-02 at 09.37.04.png" alt="logo">
                     <ul id="user_content" class="user-content">
                         <li class="user_logout"><a href="./login.php">Đăng nhập</a></li>
                         <li class="your_rv"><a href="./yourrv.php">Bài viết của bạn</a></li>

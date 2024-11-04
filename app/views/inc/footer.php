@@ -1,4 +1,8 @@
 
+
+<div>
+    <h1>Đây là footer</h1>
+</div>
 <script>
         document.getElementById("user_img").addEventListener("click", function() {
     var userMenu = document.getElementById("user_content");
@@ -23,6 +27,6 @@ window.onclick = function(event) {
 }
     </script>
     <script src="./js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="<?php echo URLROOT.'/asserts/js/'.$script; ?>.js"></script>
+    <script src="<?php echo URLROOT.'/assets/js/'.$script; ?>.js"></script>
 </body>
 </html>

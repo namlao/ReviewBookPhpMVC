@@ -14,6 +14,6 @@
   // Site Name
   define('SITENAME', 'Book Review');
 
-  define('LOGOSITE',URLROOT.'/asserts/logo/logo.png');
+  define('LOGOSITE',URLROOT.'/assets/logo/logo.png');
   // App Version
   // define('APPVERSION', '1.0.0');

@@ -41,4 +41,8 @@
       
       require_once(APPROOT."/views/inc/footer.php");
     }
+
+    function asset($file){
+      return URLROOT.'/assets/'.$file;
+    }
   }
